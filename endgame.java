@@ -145,6 +145,7 @@ public class endgame extends game{
                                             if(value4=='N'){ change = move.Knight(pawn2, place2, momentboard);}
                                             if(value4!='R' && value4!='K' && value4!='Q' && value4!='B' && value4!='N'){ change = move.Pawn(pawn2, place2, momentboard, true);}
                                             if(change==true){chess=false;}
+                                            if(change==true && value4=='K'){ chess=true; }
                                         }
                                     }
                                 }
@@ -288,9 +289,11 @@ public class endgame extends game{
                                             if(value4=='N'){ change = move.Knight(pawn2, place2, momentboard);}
                                             if(value4!='R' && value4!='K' && value4!='Q' && value4!='B' && value4!='N'){ change = move.Pawn(pawn2, place2, momentboard, true);}
                                             if(change==true){chess=false;}
+                                            if(change==true && value4=='K'){ chess=true; }
                                         }
                                     }
                                 }
+                                
                             }
                         }
                         if(check==true){System.out.println("CHECK");}

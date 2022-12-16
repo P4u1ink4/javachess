@@ -465,7 +465,7 @@ public class moving extends game {
                     }
                 }
                 else{
-                    for(int i=d;i<b;i++){
+                    for(int i=d+1;i<b+1;i++){
                         way.add(chessboard[0][i].substring(0,1) + chessboard[a][0].substring(0,1));
                     }
                 }
@@ -477,7 +477,7 @@ public class moving extends game {
                     }
                 }
                 else{
-                    for(int i=c;i<a;i++){
+                    for(int i=c+1;i<a+1;i++){
                         way.add(chessboard[0][b].substring(0,1) + chessboard[i][0].substring(0,1));
                     }
                 }
@@ -494,7 +494,7 @@ public class moving extends game {
                     }
                 }
                 else{
-                    for(int i=d;i<b;i++){
+                    for(int i=d+1;i<b+1;i++){
                         way.add(chessboard[0][i].substring(0,1) + chessboard[a][0].substring(0,1));
                     }
                 }
@@ -506,14 +506,14 @@ public class moving extends game {
                     }
                 }
                 else{
-                    for(int i=c;i<a;i++){
+                    for(int i=c+1;i<a+1;i++){
                         way.add(chessboard[0][b].substring(0,1) + chessboard[i][0].substring(0,1));
                     }
                 }
             }
             else if(c>a && d>b){
                 for(int i=a;i<c;i++){
-                    for(int j=d;j<b;j++){
+                    for(int j=d+1;j<b+1;j++){
                         way.add(chessboard[0][j].substring(0,1) + chessboard[i][0].substring(0,1));
                     }
                 }
@@ -526,14 +526,14 @@ public class moving extends game {
                 }
             }
             else if(a>c && b>d){
-                for(int i=c;i<a;i++){
-                    for(int j=d;j<b;j++){
+                for(int i=c+1;i<a+1;i++){
+                    for(int j=d+1;j<b+1;j++){
                         way.add(chessboard[0][j].substring(0,1) + chessboard[i][0].substring(0,1));
                     }
                 }
             }
             else if(a>c && d>b){
-                for(int i=c;i<a;i++){
+                for(int i=c+1;i<a+1;i++){
                     for(int j=b;j<d;j++){
                         way.add(chessboard[0][j].substring(0,1) + chessboard[i][0].substring(0,1));
                     }
@@ -543,7 +543,7 @@ public class moving extends game {
         if(value=='B'){
             if(c>a && d>b){
                 for(int i=a;i<c;i++){
-                    for(int j=d;j<b;j++){
+                    for(int j=d+1;j<b+1;j++){
                         way.add(chessboard[0][j].substring(0,1) + chessboard[i][0].substring(0,1));
                     }
                 }
@@ -556,14 +556,14 @@ public class moving extends game {
                 }
             }
             else if(a>c && b>d){
-                for(int i=c;i<a;i++){
-                    for(int j=d;j<b;j++){
+                for(int i=c+1;i<a+1;i++){
+                    for(int j=d+1;j<b+1;j++){
                         way.add(chessboard[0][j].substring(0,1) + chessboard[i][0].substring(0,1));
                     }
                 }
             }
             else if(a>c && d>b){
-                for(int i=c;i<a;i++){
+                for(int i=c+1;i<a+1;i++){
                     for(int j=b;j<d;j++){
                         way.add(chessboard[0][j].substring(0,1) + chessboard[i][0].substring(0,1));
                     }
